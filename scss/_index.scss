@@ -1,0 +1,65 @@
+@import "animation";
+
+.advert {
+    @extend .animationA;
+    text-shadow: 4px 2px 4px rgba(65, 64, 63, 0.863);
+
+}
+
+
+
+header {
+    nav {
+        ul {
+            padding-top: 11px;
+            padding-bottom: 11px;
+            display: flex;
+            flex-direction: column;
+            text-align: $c;
+
+            li {
+                border: 1px solid beige;
+                padding: 7px;
+
+                a:hover {
+                    width: 100%;
+                    display: block;
+                    background-color: bisque;
+                }
+
+
+            }
+        }
+    }
+}
+
+.presentation {
+    @extend .animationB;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.littleBeds {
+    display: flex;
+
+    flex-direction: column;
+
+    div {
+        @extend .fCC;
+        width: $max;
+        margin-top: 5%;
+        h3 {
+            text-decoration: underline;
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+
+        img {
+            width: 100%;
+            height: 330px;
+
+        }
+    
+
+    }
+}

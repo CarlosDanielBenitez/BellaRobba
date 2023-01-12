@@ -1,0 +1,17 @@
+$c: center;
+
+$max: 100%;
+$haf: 50%;
+
+.fCC {
+    display: flex;
+    flex-direction: column;
+    text-align: $c;
+    background-color: aqua;
+}
+
+$colors: (
+    primary:rgb(245, 245, 158),
+    secondary: rgb(194, 194, 109),
+    third: rgb(134, 134, 62)
+);
