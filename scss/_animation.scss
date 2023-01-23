@@ -1,22 +1,27 @@
 .animationA {
 
-    text-align: center;
+    text-align: $c;
     padding: 18px;
     font-size: 22px;
-    animation: 4s propaganda;
+    animation: 3s propaganda;
     text-shadow: 1px 1px 3px gray;
 }
 
 @keyframes propaganda {
     0% {
-
+        opacity: 1;
+    }
+    25%{
+        opacity: 1;
+    }
+    50%{
         opacity: 0;
     }
-
-    100% {
-        transform: scale(.9);
-
+    
+    100%{
+        opacity: 0;
     }
+   
 }
 .animationB{
     animation:  products infinite 4s;
