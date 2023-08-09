@@ -1,0 +1,35 @@
+$fSM: 24px;
+$fMD: 28px;
+$fML: 30px;
+$fXL: 35px;
+$fXXL: 40px;
+$c: center;
+
+$max: 100%;
+$haf: 50%;
+
+.fCC {
+    display: flex;
+    flex-direction: column;
+    text-align: $c;
+
+}
+
+$colors: (
+    primary:rgb(245, 245, 158),
+    secondary: rgb(194, 194, 109),
+    third: rgb(134, 134, 62)
+);
+
+.lGradient {
+    background-image: linear-gradient(rgb(255, 231, 110), rgba(255, 217, 110, 0.815), rgb(255, 230, 110));
+}
+
+.imgCover {
+    width: $max;
+    object-fit: cover;
+    height: $max;
+    object-position: $c ;
+}
+
+

@@ -1,0 +1,49 @@
+.animationA {
+
+    text-align: $c;
+    padding: 18px;
+    font-size: 22px;
+    animation: 3s propaganda;
+    text-shadow: 1px 1px 3px gray;
+}
+
+@keyframes propaganda {
+    0% {
+        opacity: 1;
+    }
+    25%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    
+    100%{
+        opacity: 0;
+    }
+   
+}
+.animationB{
+    animation:  products infinite 4s;
+    animation-timing-function: ease-in-out;
+    padding: 7px;
+    text-align: center;
+    
+}
+@keyframes products{
+    0%{
+        transform: translateY(1px);
+        
+    }
+    50%{
+        text-shadow: 2px 4px 2px gray;
+        transform: translateY(-1px);
+    }
+    75%{
+        transform: translateY(1px);
+    }
+    100%{
+        transform: translateY(-1px);
+       text-shadow: 2px 4px 2px gray;
+    }
+}
