@@ -92,58 +92,44 @@ header nav ul li a:hover:focus {
     text-shadow: 2px 4px 2px gray;
   }
 }
+* {
+  padding: 0;
+  margin: 0;
+}
+
 .advert {
   text-shadow: 4px 2px 4px rgba(65, 64, 63, 0.863);
 }
 
-.menu-icon {
-  display: none;
-}
-@media screen and (max-width: 768px) {
-  .menu-icon {
-    display: block;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-    z-index: 9999;
-  }
-}
-.menu-icon span {
-  display: block;
-  width: 25px;
-  height: 3px;
-  background-color: #333;
-  margin: 5px auto;
+header {
+  width: 100%;
 }
 
-@media screen and (max-width: 768px) {
-  .menu-dropdown {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(rgb(255, 255, 255), rgb(85, 85, 85));
-    padding: 40px;
-    transition: right 0.3s ease-in-out;
-    z-index: 9998;
-  }
-  .menu-dropdown ul {
-    list-style: none;
-    padding: 0;
-  }
-  .menu-dropdown ul li {
-    margin: 10px 0;
-  }
-  .menu-dropdown ul li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 24px;
-  }
+header nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
-.menu-dropdown.open {
-  right: 0;
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.dogBuying {
+  height: 800px;
+}
+
+.dogBuying img {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .presentation {
@@ -162,16 +148,20 @@ header nav ul li a:hover:focus {
   flex-direction: column;
   align-items: center;
   row-gap: 1rem;
+  justify-content: center;
+  width: 100%;
 }
 
 .bedCard {
+  display: flex;
   width: 100%;
-  height: 200px;
+  align-items: center;
+  justify-content: center;
 }
 
 .bedCard img {
+  width: 70%;
   height: 100%;
-  width: 100%;
 }
 
 .hidden {
@@ -204,22 +194,6 @@ button:hover {
   height: 35px;
 }
 
-@media screen and (min-width: 768px) {
-  .menu-dropdown ul {
-    flex-direction: row;
-    display: flex;
-    justify-content: space-around;
-  }
-  .menu-dropdown ul li:hover {
-    scale: 1.03;
-    transition: all ease-in-out 0.2s;
-  }
-}
-@media screen and (max-width: 768px) {
-  .bedCard {
-    width: 50%;
-  }
-}
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -236,11 +210,6 @@ button:hover {
   width: 100%;
 }
 
-@media screen and (min-width: 700px) {
-  .bedCard {
-    height: 500px;
-  }
-}
 @media (max-width: 769px) {
   .grid-container {
     grid-template-columns: 1fr;
