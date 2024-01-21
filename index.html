@@ -1,91 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BR-Inicio</title>
-    <meta name="author" content="Carlos Daniel Benitez" />
-    <meta name="copyright" content="BellaRobba" />
-    <meta
-      name="description"
-      content="Somos fabricantes de camitas reversibles, diseños de alta costura. También nos dedicamos a la venta de productos importados marca Hamilton"
-    />
-    <!-- open graph -->
-    <meta property="Og:title" content="BellaRobba" />
-    <meta property="Og:img" content="" />
-    <meta
-      property="Og:description"
-      content="Somos fabricantes de camitas reversibles, diseños de alta costura. También nos dedicamos a la venta de productos importados marca Hamilton"
-    />
-    <meta property="Og:url" content="" />
-    <meta property="Og:locale" content="es_Es" />
-    <link rel="stylesheet" href="./scss/main.css" />
-  </head>
 
-  <body>
-    
-    <header>
-    
-      <nav class="menu-dropdown">
-        <ul>
-          <li>
-            <a href="./index.html">Inicio</a>
-          </li>
-          <li>
-            <a href="./pages/camitas.html">Camitas</a>
-          </li>
-          <li>
-            <a href="./pages/accesorios.html">Accesorios</a>
-          </li>
-        </ul>
-        <p class="advert">BellaRobba</p>
-      </nav>
-    </header>
-    <main>
-      <img
-        class="dogBuying"
-        src="./img/logo.jpeg"
-        alt="perfil"
-      />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BR-Inicio</title>
+  <meta name="author" content="Carlos Daniel Benitez" />
+  <meta name="copyright" content="BellaRobba" />
+  <meta name="description"
+    content="Somos fabricantes de camitas reversibles, diseños de alta costura. También nos dedicamos a la venta de productos importados marca Hamilton" />
+  <!-- open graph -->
+  <meta property="Og:title" content="BellaRobba" />
+  <meta property="Og:img" content="" />
+  <meta property="Og:description"
+    content="Somos fabricantes de camitas reversibles, diseños de alta costura. También nos dedicamos a la venta de productos importados marca Hamilton" />
+  <meta property="Og:url" content="" />
+  <meta property="Og:locale" content="es_Es" />
+  <link rel="stylesheet" href="./scss/main.css" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
 
-      <h2 class="presentation">
-        Camitas reversibles, desmontables y exclusivas.
-      </h2>
-      <section>
-        <div class="bedsContainer">
-          <div class="bedCard">
+<body>
+  
+  <header>
+
+    <nav class="menu-dropdown">
+      <ul>
+        <li>
+          <a href="./index.html">Inicio</a>
+        </li>
+        <li>
+          <a href="./pages/camitas.html">Camitas</a>
+        </li>
+        <li>
+          <a href="./pages/accesorios.html">Accesorios</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <div class="imgContainer">
+      <img class="dogBuying" src="./img/logo.jpeg" alt="perfil" />
+    </div>
+
+    <h2 class=" littleBeds animate__animated  animate__backInDown">
+      Camitas reversibles, desmontables y exclusivas.
+    </h2>
+    <div class="bodySlider">
+      <div class="slider">
+        <div class="slider__item">
+          <label class="slider__control">
+            <input type="radio" name="slider" checked />
+          </label>
+          <div class="slider__content">
             <img src="./img/catalogo1.jpeg" alt="" />
           </div>
-          
-          <div class="bedCard">
-            <img src="./img/catalogo3.jpeg" alt="" />
-          </div>
-          
-          <div class="bedCard">
+        </div>
+        <div class="slider__item">
+          <label class="slider__control">
+            <input type="radio" name="slider" />
+          </label>
+          <div class="slider__content">
             <img src="./img/catalogo2.jpeg" alt="" />
           </div>
-
-          <div class="bedCard">
-            <img src="./img/catalogo5.jpeg" alt="" />
+        </div>
+        <div class="slider__item">
+          <label class="slider__control">
+            <input type="radio" name="slider" />
+          </label>
+          <div class="slider__content">
+            <img src="./img/catalogo3.jpeg" alt="" />
           </div>
-          
-          <div class="bedCard">
+        </div>
+        <div class="slider__item">
+          <label class="slider__control">
+            <input type="radio" name="slider" />
+          </label>
+          <div class="slider__content">
             <img src="./img/catalogo4.JPG" alt="" />
           </div>
         </div>
-      </section>
-    </main>
-    <footer>
-      <div class="socialMedia">
-        <a target="_blank" href="https://wa.me/1135886825" text="Hola, me gustaria saber si tienen la camita para mascotas de color "><img src="./img/iconWhatsApp.png" alt="" /></a>
-        <a target="_blank" href="https://www.instagram.com/bellarobba.pets/?hl=es-la"
-          ><img src="./img/instagramIcon.png" alt=""
-        /></a>
-        <a target="_blank" href="https://www.facebook.com/profile.php?id=100082880262894"><img src="./img/iconFacebook.png" alt="" /></a>
-        <a target="_blank" href="mailto:mirianpereira144@hotmail.com"><img src="./img/iconGmail.png" alt="" /></a>
+        <div class="slider__item">
+          <label class="slider__control">
+            <input type="radio" name="slider" />
+          </label>
+          <div class="slider__content">
+            <img src="./img/catalogo5.jpeg" alt="" />
+          </div>
+        </div>
       </div>
-      
-    </footer>
-  </body>
+     </div>
+   
+  </main>
+  <footer>
+    <div class="socialMedia">
+      <a target="_blank" href="https://wa.me/1135886825"
+        text="Hola, me gustaria saber si tienen la camita para mascotas de color "><img src="./img/iconWhatsApp.png"
+          alt="" /></a>
+      <a target="_blank" href="https://www.instagram.com/bellarobba.pets/?hl=es-la"><img src="./img/instagramIcon.png"
+          alt="" /></a>
+      <a target="_blank" href="https://www.facebook.com/profile.php?id=100082880262894"><img
+          src="./img/iconFacebook.png" alt="" /></a>
+      <a target="_blank" href="mailto:mirianpereira144@hotmail.com"><img src="./img/iconGmail.png" alt="" /></a>
+    </div>
+
+  </footer>
+  
+</body>
+
 </html>
